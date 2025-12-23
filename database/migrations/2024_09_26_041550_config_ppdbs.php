@@ -12,6 +12,8 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('link_group_smp');
             $table->string('link_group_sma');
+            $table->string('qr_code_smp')->nullable();
+            $table->string('qr_code_sma')->nullable();
             $table->boolean('status')->default(true);
             $table->uuid('created_by')->nullable();
             $table->uuid('updated_by')->nullable();
